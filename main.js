@@ -21,4 +21,7 @@ window.onload = function() {
     } else {
         console.log(`${firstName} can start driving license 🚗 after ${18 - age} years`)
     }
+
+    const favoriteNumber = prompt('What is your favorite number');
+    console.log(favoriteNumber);
 }
