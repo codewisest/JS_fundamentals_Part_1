@@ -22,6 +22,6 @@ window.onload = function() {
         console.log(`${firstName} can start driving license 🚗 after ${18 - age} years`)
     }
 
-    const favoriteNumber = prompt('What is your favorite number');
-    console.log(favoriteNumber);
+    // const favoriteNumber = prompt('What is your favorite number');
+    // console.log(favoriteNumber);
 }
