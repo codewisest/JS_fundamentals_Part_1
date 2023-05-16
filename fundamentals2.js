@@ -16,7 +16,7 @@ function fruitProcessor(apple, orange) {
     apple = fruitSliceFour(apple);
     orange = fruitSliceFour(orange);
 
-    const juice = `Juice with ${apple} pieces of apples and ${orange} pieces of oranges`;
+    const juice = `Juice with ${apple} pieces of apple and ${orange} pieces of orange`;
 
     return juice;
 }
@@ -36,11 +36,16 @@ const arrowCalcAge = birthYear => 2023 - birthYear;
 console.log(arrowCalcAge(1989));
 
 const yearsUntilRetirement = birthYear => {
-    const age = 2023 - birthYear;
+    const age = arrowCalcAge(birthYear);
     const retirementAge = 65;
     const yearsLeft = retirementAge - age;
 
-    return `You have ${yearsLeft} years left before you retire`;
+    if(yearsLeft > 0) {
+        return `You have ${yearsLeft} years left before you retire`;
+    } else if(yearsLeft < 0){
+        return `You have already retired ${Math.abs(yearsLeft)} years ago`;
+    }
 }
 
 console.log(yearsUntilRetirement(1987));
+console.log(yearsUntilRetirement(1950));
