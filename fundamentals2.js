@@ -8,9 +8,15 @@ logger();
 logger();
 logger();
 
+function fruitSliceFour(fruit) {
+    return fruit * 4;
+}
+
 function fruitProcessor(apple, orange) {
-    console.log(apple, orange);
-    const juice = `Juice with ${apple} apples and ${orange} oranges`;
+    apple = fruitSliceFour(apple);
+    orange = fruitSliceFour(orange);
+
+    const juice = `Juice with ${apple} pieces of apples and ${orange} pieces of oranges`;
 
     return juice;
 }
