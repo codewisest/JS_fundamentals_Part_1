@@ -49,3 +49,11 @@ const yearsUntilRetirement = birthYear => {
 
 console.log(yearsUntilRetirement(1987));
 console.log(yearsUntilRetirement(1950));
+
+const years = [1990, 2000, 1993, 1987];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[2]);
+const ageLast = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, ageLast);
