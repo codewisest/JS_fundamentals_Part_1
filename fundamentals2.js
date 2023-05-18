@@ -71,7 +71,7 @@ const chiji = {
         return this.age;
     },
     getSummary: function() {
-        return `${this.firstName} is a ${this.age} years old ${this.job} and he has ${this.hasDriverLicense == true ? 'a' : 'no'} driver's license`
+        return `${this.firstName} is a ${this.calcAge()} years old ${this.job} and he has ${this.hasDriverLicense == true ? 'a' : 'no'} driver's license`
     }
 }
 
