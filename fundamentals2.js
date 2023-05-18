@@ -69,3 +69,8 @@ const chiji = {
 
 console.log(chiji.friends);
 console.log(chiji['friends']);
+
+chiji.location = 'Canada';
+console.log(chiji);
+
+console.log(`${chiji.firstName} has ${chiji.friends.length} friends and the name of his best is ${chiji.friends[0]}`);
