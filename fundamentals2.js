@@ -57,3 +57,15 @@ const age2 = calcAge(years[2]);
 const ageLast = calcAge(years[years.length - 1]);
 
 console.log(age1, age2, ageLast);
+
+// objects
+const chiji = {
+    firstName: 'Chijioke',
+    lastName: 'Nwagwu',
+    age: 2023 - 1987,
+    job: 'Web Develooper',
+    friends: ['Gloria', 'Marvelous', 'Uzor'],
+}
+
+console.log(chiji.friends);
+console.log(chiji['friends']);
