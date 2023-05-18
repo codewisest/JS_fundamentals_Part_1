@@ -62,12 +62,12 @@ console.log(age1, age2, ageLast);
 const chiji = {
     firstName: 'Chijioke',
     lastName: 'Nwagwu',
-    // birthYear: 1987,
+    birthYear: 1987,
     job: 'Web Develooper',
     friends: ['Gloria', 'Marvelous', 'Uzor'],
     hasDriverLicense: true,
-    calcAge: function(birthYear) {
-        return 2023 - birthYear;
+    calcAge: function() {
+        return 2023 - this.birthYear;
     }
 }
 
@@ -78,4 +78,4 @@ chiji.location = 'Canada';
 console.log(chiji);
 
 console.log(`${chiji.firstName} has ${chiji.friends.length} friends and the name of his best is ${chiji.friends[0]}`);
-console.log(chiji.calcAge(1987));
+console.log(chiji.calcAge());
