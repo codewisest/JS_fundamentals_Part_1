@@ -69,6 +69,9 @@ const chiji = {
     calcAge: function() {
         this.age = 2023 - this.birthYear;
         return this.age;
+    },
+    getSummary: function() {
+        return `${this.firstName} is a ${this.age} years old ${this.job} and he has ${this.hasDriverLicense == true ? 'a' : 'no'} driver's license`
     }
 }
 
@@ -81,3 +84,4 @@ console.log(chiji);
 console.log(`${chiji.firstName} has ${chiji.friends.length} friends and the name of his best is ${chiji.friends[0]}`);
 chiji.calcAge();
 console.log(chiji.age);
+console.log(chiji.getSummary());
