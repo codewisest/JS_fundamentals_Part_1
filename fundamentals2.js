@@ -85,3 +85,46 @@ console.log(`${chiji.firstName} has ${chiji.friends.length} friends and the name
 chiji.calcAge();
 console.log(chiji.age);
 console.log(chiji.getSummary());
+
+// Loops
+const chijiArray = [
+    'Chiji',
+    'Nwagwu',
+    2023 - 1987,
+    'Web Developer',
+    ['Gloria', 'Peter', 'Uzor']
+]
+
+const types = [];
+
+for(let i = 0; i < chijiArray.length; i++) {
+    console.log(chijiArray[i], typeof chijiArray[i]);
+
+    types.push(typeof chijiArray[i]);
+}
+
+console.log(types);
+
+const birthYears = [1987, 1991, 2007, 1969, 2020]
+
+const ages = [];
+
+for(let i = 0; i < birthYears.length; i++) {
+    ages.push(2023 - birthYears[i]);
+}
+
+console.log(ages);
+
+for(let i = 0; i < chijiArray.length; i++) {
+    if(typeof chijiArray[i] !== "string") continue
+    console.log(chijiArray[i], typeof chijiArray[i]);
+
+    // types.push(typeof chijiArray[i]);
+}
+
+for(let i = 0; i < chijiArray.length; i++) {
+    if(typeof chijiArray[i] === "number") break
+    console.log(chijiArray[i], typeof chijiArray[i]);
+
+    // types.push(typeof chijiArray[i]);
+}
