@@ -9,7 +9,7 @@ const calcTip2 = billValue => {
 }
 
 for (let i = 0; i < billValues.length; i++) {
-    let tip = calcTip2(billValues[i]);
+    const tip = calcTip2(billValues[i]);
     tips2.push(tip);
     totals2.push(billValues[i] + tip);
 }
@@ -19,6 +19,7 @@ console.log(tips2, totals2);
 
 const myArray = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let sum = 0;
+
 function calcAverage(anyArray) {
     sum += anyArray;
 }
