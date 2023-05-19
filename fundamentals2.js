@@ -128,3 +128,11 @@ for(let i = 0; i < chijiArray.length; i++) {
 
     // types.push(typeof chijiArray[i]);
 }
+
+for (let excercise = 1; excercise < 4; excercise++) {
+    console.log(`-------Starting excercise ${excercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${excercise}: Lifting weight repetition ${rep}`);
+    }
+}
