@@ -136,3 +136,6 @@ for (let excercise = 1; excercise < 4; excercise++) {
         console.log(`Exercise ${excercise}: Lifting weight repetition ${rep}`);
     }
 }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
