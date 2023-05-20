@@ -146,3 +146,41 @@ for (let excercise = 1; excercise < 4; excercise++) {
 let dice = Math.trunc(Math.random() * 6) + 1;
 console.log(dice);
 console.log();
+
+const temperatures = [3, -2, -8, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+const getMaxNumber = function (anyArray) {
+  let maxNumber = anyArray[0];
+  for (let i = 0; i < anyArray.length; i++) {
+    if (typeof anyArray[i] !== 'number') continue;
+    if (maxNumber < anyArray[i]) {
+      maxNumber = anyArray[i];
+    }
+  }
+  console.log(maxNumber);
+  return maxNumber;
+};
+
+const getMinNumber = function (anyArray) {
+  let minNumber = anyArray[0];
+  for (let i = 0; i < anyArray.length; i++) {
+    if (typeof anyArray[i] !== 'number') continue;
+    if (minNumber > anyArray[i]) {
+      minNumber = anyArray[i];
+    }
+  }
+  console.log(minNumber);
+  return minNumber;
+};
+
+const calcAmplitude = function (temperatures) {
+  const max = getMaxNumber(temperatures);
+  const min = getMinNumber(temperatures);
+
+  const amp = max - min;
+  return amp;
+};
+
+const amplitude = calcAmplitude(temperatures);
+
+console.log(amplitude);
